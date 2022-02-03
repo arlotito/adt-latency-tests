@@ -5,8 +5,9 @@ Some notes and tools to measure the latency of events flowing along a sample Azu
 **DISCLAIMER:** *the performance figures shared in this article may be inaccurate and not applicable to your case. Do your own tests and assessment, using the methodology and tools described here if you will.*
 
 ### The results
+The simulated source sends a total of 5K messages with a rate = 1 msg/s.
 
-(with a simulated source sending 5K messages with a rate = 1 msg/s)
+The events flow through the pipeline and hit the [ehConsumer](./ehConsumer/Program.cs) with the same rate (1 msg/s), but with some latency.  
 
 The latency from the Azure Function entry-point (C) to EH ingress (E):
 * p90 = 0.31 s
@@ -25,7 +26,7 @@ The latter suggests that most of the end-2-end latency is spent waiting for the 
 TO DO: try with a [premium plan](https://docs.microsoft.com/en-us/azure/azure-functions/functions-premium-plan). That should provide a significant performance boost.
 
 ### The Tools
-* a [console app](./ehConsumer/Program.cs) consuming the events from the EH and logging stats to a file
+* a [ehConsumer](./ehConsumer/Program.cs) console app to consume the events from the EH and logging stats to a file
 * a [jupyter](./jupyter/plot.ipynb) notebook to analyze the logs and plot the charts
 
 # Steps to reproduce
