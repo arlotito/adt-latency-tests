@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:contosocom:DigitalTwins:Thermostat;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TelemetryObject",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "Value",
+            "schema": "double"
+          },
+          {
+            "name": "EventGridTime",
+            "schema": "string"
+          },
+          {
+            "name": "IngestionFunctionTime",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "SlowChangingProperty",
+      "schema": "double"
+    }
+  ]
+}

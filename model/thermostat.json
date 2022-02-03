@@ -1,0 +1,32 @@
+{
+  "@id": "dtmi:contosocom:DigitalTwins:Thermostat;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "TelemetryValue",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "TimeA",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "TimeB",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "TimeC",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "TimeD",
+      "schema": "string"
+    }
+  ]
+}
