@@ -19,5 +19,7 @@ Use the [ehConsumer](./ehConsumer/Program.cs) console app to consume the events 
 The log file can be then analyzed with the [Jupyter](./jupyter/plot.ipynb) notebook.
 
 ```bash
+cd ./ehConsumer
+
 dotnet run -- --eh-conn-string="Endpoint=sb://arlotitoadtehns.servicebus.windows.net/;SharedAccessKeyName=EHPolicy;SharedAccessKey=XXXXXXXXXXXXXX;EntityPath=property-event-hub" -n "property-event-hub"
 ```
