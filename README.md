@@ -5,15 +5,16 @@ Some notes and tools to measure the latency of events flowing along a sample Azu
 ### The results
 
 (with a simulated source sending 5K messages with a rate = 1 msg/s)
-![](./images/results.png)
 
 The latency from the Azure Function entry-point (C) to EH ingress (E):
 * p90 = 0.31 s
 * max = 1.86 s
+![](./images/results-c-e.png)
 
 The end-to-end latency (A-to-E):
 * p90 = 6.07 s
 * max = 77.57 s
+![](./images/results-a-e.png)
 
 The latter suggests that most of the end-2-end latency is spent waiting for the azure function to be triggered.
 Maybe that's related to the Azure Function hosting plan, which is [consumption plan](https://docs.microsoft.com/en-us/azure/azure-functions/consumption-plan) (Y1).
