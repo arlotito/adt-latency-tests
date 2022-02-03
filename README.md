@@ -27,12 +27,12 @@ TO DO: try with a [premium plan](https://docs.microsoft.com/en-us/azure/azure-fu
 
 ### The Tools
 * a [ehConsumer](./ehConsumer/Program.cs) console app to consume the events from the EH and logging stats to a file
-* a [jupyter](./jupyter/plot.ipynb) notebook to analyze the logs and plot the charts
+* a [jupyter notebook](./jupyter/plot.ipynb) to analyze the logs and plot the charts
 
 # Steps to reproduce
 * [deploy the solution](./deploy.md)
 * [perform the test](./test.md)
-* plot the charts with the [jupyter](./jupyter/plot.ipynb) notebook
+* plot the charts with the [jupyter notebook](./jupyter/plot.ipynb) 
 
 
 

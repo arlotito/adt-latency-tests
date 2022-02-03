@@ -24,4 +24,4 @@ cd ./ehConsumer
 dotnet run -- --eh-conn-string="Endpoint=sb://arlotitoadtehns.servicebus.windows.net/;SharedAccessKeyName=EHPolicy;SharedAccessKey=XXXXXXXXXXXXXX;EntityPath=property-event-hub" -n "property-event-hub"
 ```
 
-The log file can be then analyzed with the [Jupyter](./jupyter/plot.ipynb) notebook.
+The log file can be then analyzed with the [Jupyter notebook](./jupyter/plot.ipynb).
