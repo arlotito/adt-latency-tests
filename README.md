@@ -20,10 +20,9 @@ The end-to-end latency (A-to-E):
 
 > NOTE: 'p90' is the 90th percentile
 
-The latter suggests that most of the end-2-end latency is spent waiting for the azure function to be triggered.
-Maybe that's related to the Azure Function hosting plan, which is [consumption plan](https://docs.microsoft.com/en-us/azure/azure-functions/consumption-plan) (Y1).
+The latter suggests that most of the end-2-end latency is spent waiting for the azure function to be triggered. The Azure Function hosting plan is a [consumption plan](https://docs.microsoft.com/en-us/azure/azure-functions/consumption-plan) (Y1).
 
-TO DO: try with a [premium plan](https://docs.microsoft.com/en-us/azure/azure-functions/functions-premium-plan).
+TO DO: try with a [premium plan](https://docs.microsoft.com/en-us/azure/azure-functions/functions-premium-plan). That should provide a significant performance boost.
 
 ### The Tools
 * a [console app](./ehConsumer/Program.cs) consuming the events from the EH and logging stats to a file
