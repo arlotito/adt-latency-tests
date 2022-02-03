@@ -2,7 +2,7 @@
 Some notes and tools to measure the latency of events flowing along a sample Azure Digital Twin pipeline:
 ![](./images/pipeline.png)
 
-**DISCLAIMER:** *the performance figures shared in this article may be inaccurate and not applicable to your case. Do your own tests and assessment, using the methodology and tools described here if you will.* *NOTE*
+**DISCLAIMER:** *the performance figures shared in this article may be inaccurate and not applicable to your case. Do your own tests and assessment, using the methodology and tools described here if you will.*
 
 ### The results
 
