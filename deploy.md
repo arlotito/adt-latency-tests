@@ -1,6 +1,8 @@
 # Deploy the solution
 ## setup ADT instance and authentication
 ```bash
+USER=<your-email> #example: me@contoso.com
+
 # create RG
 az group create --location westeurope --resource-group adt-tests-rg
 
@@ -14,7 +16,7 @@ ADT_NAME=$(az dt show --dt-name adt-tests-1 | jq -r .name)
 ADT_RG=$(az dt show --dt-name adt-tests-1 | jq -r .resourceGroup)
 
 # assign the "ADT Data Owner" role to the user
-az dt role-assignment create --dt-name adt-tests-1 --assignee "arlotito@microsoft.com" --role "Azure Digital Twins Data Owner"
+az dt role-assignment create --dt-name adt-tests-1 --assignee "$USER" --role "Azure Digital Twins Data Owner"
 
 # get name of active subscription
 ADT_SUBSCRIPTION=$(az account show | jq .name)
